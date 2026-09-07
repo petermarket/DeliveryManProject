@@ -8,13 +8,9 @@ To prevent merge conflicts and spaghetti code, this project strictly separates a
 
 ### 1. The `R/` Directory (Core Logic)
 This directory is exclusively for reusable functions. **Do not put execution code here.**
-*   `a_star.R`: Manages the core pathfinding, node expansion, and frontier lists.
-*   `heuristics.R`: Contains the math for Manhattan distances, cost calculations, and traffic degradation probabilities.
-*   `main_controller.R`: The wrapper function that integrates the heuristic and pathfinding logic to pass back to the game environment.
 
 ### 2. The `scripts/` Directory (Execution & Testing)
 This directory is for running the code and benchmarking performance. 
-*   `evaluate_model.R`: This is our primary testing script. It loads the environment, sources the functions from the `R/` directory, and runs `testDM()` to measure our implementation against the assignment's time and score constraints.
 
 ## How to Run the Project
 
